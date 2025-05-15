@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor configs
+.vscode/
+.idea/
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# System Files
+Thumbs.db
+
+# MacOS metadata
+*.DS_Store
+
+# Linux swap files
+*.swp
+
+# Optional: lockfile
+# Se estiver usando npm:
+package-lock.json
+# Se estiver usando yarn:
+# yarn.lock
