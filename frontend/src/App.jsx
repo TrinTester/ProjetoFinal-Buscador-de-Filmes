@@ -5,13 +5,14 @@ import MovieCard from "./components/MovieCard";
 function App() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
+  const apiUrl = import.meta.env.VITE_REACT_APP_API_URL || process.env.REACT_APP_API_URL;
 
   // Busca filmes populares na inicialização
   useEffect(() => {
     const fetchPopular = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:5000/api/filmes-populares");
+        const response = await fetch(`${apiUrl}/api/filmes-populares`);
         const data = await response.json();
         setMovies(data.results || []);
       } catch (error) {
@@ -21,14 +22,14 @@ function App() {
     };
 
     fetchPopular();
-  }, []);
+  }, [apiUrl]);
 
   // Busca filmes pelo termo digitado
   const handleSearch = async (query) => {
     if (!query) return;
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:5000/api/buscar?q=${query}`);
+      const response = await fetch(`${apiUrl}/api/buscar?q=${query}`);
       const data = await response.json();
       setMovies(data.results || []);
     } catch (error) {
