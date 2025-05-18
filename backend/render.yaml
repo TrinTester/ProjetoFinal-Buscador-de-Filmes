@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 services:
   - type: web
     name: buscador-filmes-api
@@ -20,4 +19,3 @@ services:
     envVars:
       - key: TMDB_API_KEY
         value: 670421bc0ae887c6755d4f02a081c962
->>>>>>> master
