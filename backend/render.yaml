@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+services:
+  - type: web
+    name: buscador-filmes-api
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: TMDB_API_KEY
+        value: SUA_CHAVE_DA_API
+=======
+services:
+  - type: web
+    name: buscador-filmes-api
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: TMDB_API_KEY
+        value: 670421bc0ae887c6755d4f02a081c962
+>>>>>>> master
