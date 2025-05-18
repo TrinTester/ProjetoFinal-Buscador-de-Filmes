@@ -5,16 +5,11 @@ import MovieCard from "./components/MovieCard";
 function App() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
-<<<<<<< HEAD
-  const apiUrl = import.meta.env.VITE_REACT_APP_API_URL || process.env.REACT_APP_API_URL;
-
-  // Busca filmes populares na inicialização
-=======
 
   // 🔽 Esta linha define a URL da API, pegando do .env
   const apiUrl = import.meta.env.VITE_REACT_APP_API_URL || process.env.REACT_APP_API_URL;
 
->>>>>>> master
+  // Busca filmes populares na inicialização
   useEffect(() => {
     const fetchPopular = async () => {
       setLoading(true);
