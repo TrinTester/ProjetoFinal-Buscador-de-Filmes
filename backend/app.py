@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from tmdb_api import search_movies, get_popular_movies
@@ -46,4 +45,4 @@ def filmes_populares():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
->>>>>>> master
+
