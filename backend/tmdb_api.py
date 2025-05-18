@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 import requests
 from dotenv import load_dotenv
@@ -68,4 +67,3 @@ def get_popular_movies():
     data = response.json()
     data["results"] = [movie for movie in data.get("results", []) if movie.get("poster_path")]
     return data
->>>>>>> master
