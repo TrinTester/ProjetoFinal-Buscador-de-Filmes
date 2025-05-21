@@ -42,7 +42,9 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Buscador de Filmes</h1>
+      <h1 onClick={() => window.location.reload()} style={{ cursor: "pointer" }}>
+        Buscador de Filmes
+      </h1>
       <SearchBar onSearch={handleSearch} />
 
       {loading ? (
