@@ -1,0 +1,35 @@
+# .gitignore
+
+# Node (Front-end)
+node_modules/
+dist/
+.vite/
+
+# Vite environment files
+.env
+.env.local
+
+# Python (Back-end)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+instance/
+
+# VSCode e editor
+.vscode/
+*.swp
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Deploys
+*.sqlite3
+*.db
+
+.vercel
